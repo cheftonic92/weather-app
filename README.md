@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+**Español**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicación web desarrollada con React que permite a los usuarios consultar el clima actual de cualquier ubicación utilizando la WeatherAPI. La aplicación presenta una interfaz moderna y fácil de usar, demostrando las capacidades del desarrollo web con React.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- Búsqueda de clima actual por ubicación.
+- Interfaz de usuario moderna y receptiva.
+- Consumo de datos en tiempo real desde WeatherAPI.
 
-### `npm start`
+## Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clona este repositorio:
+    ```bash
+    git clone https://github.com/cheftonic92/weather-app.git
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navega al directorio del proyecto:
+    ```bash
+    cd weather-app
+    ```
 
-### `npm test`
+3. Instala las dependencias:
+    ```bash
+    npm install
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Configura tu clave API de WeatherAPI:
+    - Crea un archivo `.env` en el directorio raíz del proyecto.
+    - Añade tu clave API de WeatherAPI:
+        ```
+        REACT_APP_WEATHER_API_KEY=your_api_key_here
+        ```
 
-### `npm run build`
+5. Ejecuta la aplicación:
+    ```bash
+    npm start
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Uso
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Ingresa una ubicación en el campo de búsqueda para obtener el clima actual.
+- Navega por la interfaz para ver la información del clima.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contribución
 
-### `npm run eject`
+¡Las contribuciones son bienvenidas! Por favor, abre un issue para discutir lo que te gustaría cambiar.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**English**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Application developed with React that allows users to check the current weather of any location using WeatherAPI. The app features a modern and user-friendly interface, showcasing the capabilities of web development with React.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Features
 
-## Learn More
+- Search for current weather by location.
+- Modern and responsive user interface.
+- Real-time data consumption from WeatherAPI.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/cheftonic92/weather-app.git
+    ```
 
-### Code Splitting
+2. Navigate to the project directory:
+    ```bash
+    cd weather-app
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-### Analyzing the Bundle Size
+4. Configure your WeatherAPI key:
+    - Create a `.env` file in the root directory of the project.
+    - Add your WeatherAPI key:
+        ```
+        REACT_APP_WEATHER_API_KEY=your_api_key_here
+        ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Run the application:
+    ```bash
+    npm start
+    ```
 
-### Making a Progressive Web App
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Enter a location in the search field to get the current weather.
+- Navigate through the interface to view weather information.
 
-### Advanced Configuration
+## Contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! Please open an issue to discuss what you would like to change.
