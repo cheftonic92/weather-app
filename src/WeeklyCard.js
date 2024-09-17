@@ -26,6 +26,15 @@ const WeeklyCard = ({ dayData }) => {
               <CardText>
                 <FaUmbrella className="me-1" /> {dayData.day.daily_chance_of_rain}%
               </CardText>
+              <CardText>
+                <FaTemperatureHigh className="me-1" /> {dayData.day.maxtemp_c}°C
+              </CardText>
+              <CardText>
+                <FaTemperatureHigh className="me-1" /> {dayData.day.maxtemp_c}°C
+              </CardText>
+              <CardText>
+                <FaTemperatureHigh className="me-1" /> {dayData.day.maxtemp_c}°C
+              </CardText>
             </CardBody>
           </Card>
         </Col>
