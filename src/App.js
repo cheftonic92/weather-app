@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import { Form, Button, InputGroup, ListGroup, Row } from 'react-bootstrap';
-import CurrentCard from './CurrentCard';
-import WeeklyCard from './WeeklyCard';
-import 'react-toastify/dist/ReactToastify.css';
+import CurrentCard from './components/CurrentCard';
+import WeeklyCard from './components/WeeklyCard';
 import { ToastContainer, toast } from 'react-toastify';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
+import './App.css'
 
 const API_URL = process.env.REACT_APP_WEATHER_API_URL;
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
@@ -48,18 +51,18 @@ const App = () => {
     }
   }
   return (
-    <div className="container">
-      <h1 className="my-4">Weather App</h1>
-      <div className="mb-3">
-        <InputGroup className="mb-3">
+    <div className="App">
+      <Navbar/>
+      <div className='container'>
+      <div className="my-3">
+        <InputGroup className="mb-3" id='search'>
           <Form.Control
             placeholder="Enter city"
             aria-label="Enter city"
-            aria-describedby="basic-addon2"
             value={city}
             onChange={(e) => { setCity(e.target.value); fetchSuggestions(e.target.value); }}
           />
-          <Button variant="outline-secondary" id="button-addon2" onClick={() => searchCity(city)}>
+          <Button variant="primary" id="button-addon2" onClick={() => searchCity(city)}>
             Search
           </Button>
         </InputGroup>
@@ -83,6 +86,8 @@ const App = () => {
           ))}
         </Row>
       )}
+      </div>
+      <Footer/>
     </div>
   );
 }
